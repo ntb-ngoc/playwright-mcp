@@ -1,0 +1,16 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "launchOptions": { "headless": true, "channel": "chrome" }
+  },
+  "network": {
+    "allowedOrigins": ["https://your-app.com"],
+    "blockedOrigins": []
+  },
+  "timeouts": {
+    "action": 5000,
+    "navigation": 60000
+  },
+  "outputDir": "./test-output",
+  "testIdAttribute": "data-testid"
+}

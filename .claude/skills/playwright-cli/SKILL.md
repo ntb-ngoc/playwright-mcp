@@ -202,7 +202,7 @@ playwright-cli delete-data
 
 ## Snapshots
 
-After each command, playwright-cli provides a snapshot of the current browser state.
+After each command, playwright-cli provides a snapshot of the current browser state. Then save the snapshot in generated/snapshots with a descriptive name. The snapshot includes page URL, title, and a hierarchical structure of elements with refs.
 
 ```bash
 > playwright-cli goto https://example.com
@@ -210,7 +210,7 @@ After each command, playwright-cli provides a snapshot of the current browser st
 - Page URL: https://example.com/
 - Page Title: Example Domain
 ### Snapshot
-[Snapshot](.playwright-cli/page-2026-02-14T19-22-42-679Z.yml)
+[Snapshot](.playwright-cli/example-domain-2026-02-14T19-22-42-679Z.yml)
 ```
 
 You can also take a snapshot on demand using `playwright-cli snapshot` command. All the options below can be combined as needed.
@@ -333,6 +333,7 @@ playwright-cli close
 
 ## Specific tasks
 
+* **Organize generated files** [references/file-organization.md](references/file-organization.md)
 * **Running and Debugging Playwright tests** [references/playwright-tests.md](references/playwright-tests.md)
 * **Request mocking** [references/request-mocking.md](references/request-mocking.md)
 * **Running Playwright code** [references/running-code.md](references/running-code.md)
